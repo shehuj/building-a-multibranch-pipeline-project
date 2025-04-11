@@ -5,7 +5,7 @@ pipeline {
         NODE_OPTIONS = '--max-old-space-size=4096'
         GIT_SSL_NO_VERIFY = 'true'
     }
-    steps {
+    stages {
         stage('Build') {
             steps {
             withEnv(["PATH+NODE=/usr/local/bin"]) {
